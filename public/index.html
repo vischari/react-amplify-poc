@@ -25,6 +25,14 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>React App</title>
+    <script src="https://dev-cfp.autodesk.com/cfp-vendors/current/main.js"></script>
+    <script src="https://dev-cfp.autodesk.com/cfp-runtime/current/main.js"></script>
+
+    <!-- Added temporarily while app teams upgrade to reference CFP vendors -->
+    <script type="application/javascript">
+      window.React = window.cfp.vendors.React;
+      window.ReactDOM = window.cfp.vendors.ReactDOM;
+    </script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
